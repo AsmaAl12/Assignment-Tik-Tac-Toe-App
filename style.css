@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 65px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 27px;
+    padding: 12px 12px;
+
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.info {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.gameInfo {
+    padding: 0 34px;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    color: white;
+    padding: 5px 16px;
+    background-color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+@media screen and (max-width: 600px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 34px;
+        font-size: 10px;
+    }
+
+    #reset {
+        font-size: 10px;
+        font-weight: bolder;
+        padding: 4px 10px;
+        border-radius: 3px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    #reset {
+        font-size: 8px;
+        font-weight: bold;
+        padding: 3px 9px;
+        border-radius: 2px;
+    }
+
+}
+
+@media screen and (max-width: 200px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 10px;
+        font-size: 5px;
+    }
+
+    #reset {
+        font-size: 5px;
+        font-weight: bold;
+        padding: 3px 2px;
+        border-radius: 2px;
+    }
+}
+
+
+
